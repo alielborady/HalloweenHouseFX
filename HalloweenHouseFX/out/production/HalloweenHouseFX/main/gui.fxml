@@ -1,0 +1,105 @@
+<?import javafx.geometry.Insets?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="global" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="920.0" stylesheets="@../pics/styles.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.Controller">
+    <children>
+        <ImageView fitHeight="538.0" fitWidth="920.0" AnchorPane.topAnchor="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+            <image>
+                <Image url="@../pics/finall2.jpg" />
+            </image></ImageView>
+        <ImageView id="bloodmoon" fx:id="bloodmoon" fitHeight="200.0"  layoutX="130.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true" visible="false">
+            <image>
+                <Image url="@../pics/mooon.png" />
+            </image>
+        </ImageView>
+        <ImageView id="batsImage" fx:id="batsImage" fitHeight="600.0"  layoutX="70.0" layoutY="-120.0" pickOnBounds="true" preserveRatio="true" visible="false">
+            <image>
+                <Image url="@../pics/bats.png" />
+            </image>
+        </ImageView>
+        <ImageView id="scarecrowImage" fx:id="scarecrowImage" fitHeight="320.0"  layoutX="-50.0" layoutY="220.0" pickOnBounds="true" preserveRatio="true" visible="false">
+            <image>
+                <Image url="@../pics/scarecrow.png" />
+            </image>
+        </ImageView>
+        <ImageView id="pumpkin1" fx:id="pumpkin1" fitHeight="90.0"  layoutX="520.0" layoutY="430.0" pickOnBounds="true" preserveRatio="true" visible="false">
+            <image>
+                <Image url="@../pics/pumpkin.png" />
+            </image>
+        </ImageView>
+        <ImageView id="pumpkin2" fx:id="pumpkin2" fitHeight="90.0"  layoutX="350.0" layoutY="430.0" pickOnBounds="true" preserveRatio="true" visible="false">
+            <image>
+                <Image url="@../pics/pumpkin.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="rain" fitHeight="528.0" fitWidth="920.0" layoutX="2.0" layoutY="6.0" pickOnBounds="true" visible="false">
+            <image>
+                <Image url="@../pics/rain.gif" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="lightning" fitHeight="528.0" fitWidth="920.0" layoutX="2.0" layoutY="-100.0" pickOnBounds="true" visible="false">
+            <image>
+                <Image url="@../pics/lightning.gif" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="bountyImage" fitHeight="87.0" fitWidth="84.0" layoutX="738.0" layoutY="115.0" visible="false">
+            <image>
+                <Image url="@../pics/bounty.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="buenoImage" fitHeight="87.0" fitWidth="84.0" layoutX="818.0" layoutY="115.0" visible="false">
+            <image>
+                <Image url="@../pics/bueno.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="kitkatImage" fitHeight="87.0" fitWidth="84.0" layoutX="818.0" layoutY="195.0" visible="false">
+            <image>
+                <Image url="@../pics/kitkat.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="twixImage" fitHeight="87.0" fitWidth="84.0" layoutX="728.0" layoutY="195.0" visible="false">
+            <image>
+                <Image url="@../pics/twix.png" />
+            </image>
+        </ImageView>
+        <AnchorPane id="panel" layoutY="393.0" prefHeight="62.0" prefWidth="920.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+            <children>
+                <Button id="Scarecrow" fx:id="Scarecrow" layoutX="30.0" layoutY="9.0" mnemonicParsing="false" onMouseClicked="#onClick" prefHeight="44.0" text="Scarecrow" textFill="#ffba5a" AnchorPane.bottomAnchor="9.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="9.0" />
+                <Button id="moon" fx:id="moon" layoutX="119.0" layoutY="9.0" mnemonicParsing="false" onMouseClicked="#onClick" prefHeight="44.0" text="Blood Moon" textFill="#ffba5a" AnchorPane.bottomAnchor="9.0" AnchorPane.leftAnchor="119.0" AnchorPane.topAnchor="9.0" />
+                <Button id="bats" fx:id="bats" layoutX="243.0" layoutY="9.0" mnemonicParsing="false" onMouseClicked="#onClick" prefHeight="44.0" text="Bats" textFill="#ffba5a" AnchorPane.bottomAnchor="9.0" AnchorPane.leftAnchor="243.0" AnchorPane.topAnchor="9.0" />
+                <Button id="scary" fx:id="scary" layoutX="321.0" layoutY="9.0" mnemonicParsing="false" onMouseClicked="#onClick" prefHeight="44.0" text="Scary Mood" textFill="#ffba5a" AnchorPane.bottomAnchor="9.0" AnchorPane.leftAnchor="321.0" AnchorPane.topAnchor="9.0" />
+                <Button id="candy" fx:id="candy" layoutX="718.0" layoutY="9.0" mnemonicParsing="false" onMouseClicked="#onClick" prefHeight="44.0" text="Trick or Treat" textFill="#ffba5a" AnchorPane.bottomAnchor="9.0" AnchorPane.leftAnchor="718.0" AnchorPane.topAnchor="9.0" />
+                <Button id="clear" fx:id="clear" layoutX="838.0" layoutY="8.0" mnemonicParsing="false" onAction="#clearCandy" onMouseClicked="#onClick" prefHeight="44.0" text="Clear" textFill="#ffba5a" />
+
+                <RadioButton fx:id="bounty" layoutX="437.0" layoutY="6.0" mnemonicParsing="false" onAction="#listCandy" text="Bounty" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="15.0" />
+                    </font>
+                </RadioButton>
+                <RadioButton fx:id="bueno" layoutX="590.0" layoutY="4.0" mnemonicParsing="false" onAction="#listCandy" text="Bueno" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="15.0" />
+                    </font>
+                </RadioButton>
+                <RadioButton fx:id="kitkat" layoutX="590.0" layoutY="33.0" mnemonicParsing="false" onAction="#listCandy" text="Kitkat" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="15.0" />
+                    </font>
+                </RadioButton>
+                <RadioButton fx:id="twix" layoutX="437.0" layoutY="33.0" mnemonicParsing="false" onAction="#listCandy" text="Twix" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="15.0" />
+                    </font>
+                </RadioButton>
+            </children>
+        </AnchorPane>
+    </children>
+
+</AnchorPane>

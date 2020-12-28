@@ -1,0 +1,36 @@
+/*#global {
+    -fx-background-image: url("finall2.jpg");
+    -fx-background-size: cover;
+}*/
+
+#land {
+    -fx-background-image: url("finall2.jpg");
+    -fx-background-size: cover;
+}
+
+#panel {
+    -fx-height: 72;
+    -fx-background-color: #1C1917;
+}
+
+#Scarecrow,
+#moon,
+#bats,
+#scary,
+#candy,
+#clear {
+    -fx-height: 44;
+    -fx-padding: 0 22 0 22;
+    -fx-text-fill: #FFBA5A;
+    -fx-background-color: #312E2A;
+    -fx-background-radius: 22;
+}
+
+#Scarecrow:pressed,
+#moon:pressed,
+#bats:pressed,
+#scary:pressed,
+#candy:pressed,
+#clear:pressed{
+    -fx-background-color: #24211E;
+}
